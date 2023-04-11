@@ -35,7 +35,7 @@ public class DayNight : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (_firstEnter)
+        if (_firstEnter && other.CompareTag("Player"))
         {
             _start = true;
             _firstEnter = false;

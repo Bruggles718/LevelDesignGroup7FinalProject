@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float gravity = 9.81f;
     public float airControl = 10f;
     private Vector3 input;
+    private float distanceToGround;
     //private Animator anim;
 
     private Vector3 moveDirection;
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        this.distanceToGround = GetComponent<Collider>().bounds.extents.y;
         //anim = GetComponent<Animator>();
     }
 
@@ -26,12 +28,12 @@ public class PlayerController : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
-        input = (transform.right * moveHorizontal+ transform.forward * moveVertical).normalized;
+        input = Vector3.ClampMagnitude((transform.right * moveHorizontal+ transform.forward * moveVertical), Mathf.Max(Mathf.Abs(moveHorizontal), Mathf.Abs(moveVertical)));
         input *= speed;
 
        
 
-        if (controller.isGrounded)
+        if (IsGrounded())
         {
             /*
             if (input == Vector3.zero)
@@ -63,6 +65,11 @@ public class PlayerController : MonoBehaviour
         }
 
         moveDirection.y -= gravity * Time.deltaTime;
-        controller.Move(input * Time.deltaTime);
+        controller.Move(moveDirection * Time.deltaTime);
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics.Raycast(this.transform.position, -Vector3.up, this.distanceToGround + 0.2f);
     }
 }

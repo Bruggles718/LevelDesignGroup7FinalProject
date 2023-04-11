@@ -806,7 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c52049a561e743eeb96b5549cef2dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 100
   jumpHeight: 10
   gravity: 9.81
   airControl: 10
@@ -40452,6 +40452,10 @@ PrefabInstance:
       value: Time Cycle 1
       objectReference: {fileID: 0}
     - target: {fileID: 1900740391642026541, guid: 6faa10dfced9d43f7a7fdf46f2344de1, type: 3}
+      propertyPath: amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900740391642026541, guid: 6faa10dfced9d43f7a7fdf46f2344de1, type: 3}
       propertyPath: sunLight
       value: 
       objectReference: {fileID: 996670909}
@@ -40465,7 +40469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1900740391642026705, guid: 6faa10dfced9d43f7a7fdf46f2344de1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1995.9
+      value: -1864
       objectReference: {fileID: 0}
     - target: {fileID: 1900740391642026705, guid: 6faa10dfced9d43f7a7fdf46f2344de1, type: 3}
       propertyPath: m_LocalPosition.z

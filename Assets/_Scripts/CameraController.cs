@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
     public float mouseSensitivity = 100f;
     float pitch = 0f;
-
+    // public GameObject flashlight;
     Transform playerBody;
 
     // Start is called before the first frame update
@@ -30,6 +30,8 @@ public class CameraController : MonoBehaviour
         pitch -= moveY;
         pitch = Mathf.Clamp(pitch, -90f, 90f);
         transform.localRotation = Quaternion.Euler(pitch, 0f, 0f);
+        // flashlight.transform.localRotation = transform.localRotation;
         transform.Rotate(new Vector3(0, 0, 0));
+        // flashlight.transform.Rotate(new Vector3(0,0,0));
     }
 }

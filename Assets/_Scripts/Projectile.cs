@@ -17,6 +17,22 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void SetTarget(Transform target)
+    {
+        this.target = target;
+    }
+
+    public void Launch()
+    {
         updateGizmoPos = false;
         var position = this.transform.position;
         gizmoPos = position;
@@ -39,12 +55,6 @@ public class Projectile : MonoBehaviour
         var velocity = direction * horizontalVelocity + Vector3.up * initialUpwardVelocity;
 
         GetComponent<Rigidbody>().AddForce(velocity, ForceMode.VelocityChange);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnDrawGizmos()

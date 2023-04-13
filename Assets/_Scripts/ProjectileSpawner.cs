@@ -11,7 +11,7 @@ public class ProjectileSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        lockTime = 0;
     }
 
     // Update is called once per frame
@@ -22,6 +22,6 @@ public class ProjectileSpawner : MonoBehaviour
 
         projectile.SetTarget(target);
         projectile.Launch();
-        lockTime += spawnRate;
+        lockTime = Time.time + spawnRate;
     }
 }

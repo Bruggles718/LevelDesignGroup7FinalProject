@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class Falling : MonoBehaviour
 {
+    public Transform _mainCam;
     public float gravity = 9.81f;
     public float speed = 2f;
     private bool _notColliding = true;
     private Rigidbody _myRb;
+    [SerializeField]
+    private GameObject _cutscene;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,5 +42,15 @@ public class Falling : MonoBehaviour
     private void OnCollisionExit(Collision other)
     {
         _notColliding = true;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            Camera.main.transform.position = _mainCam.transform.position;
+            Camera.main.transform.rotation = _mainCam.transform.rotation;
+            _cutscene.SetActive(true);
+        }
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine;
 public class Falling : MonoBehaviour
 {
     public Transform _mainCam;
+    public Transform target;
     public float gravity = 9.81f;
     public float speed = 2f;
     private bool _notColliding = true;
@@ -44,13 +45,5 @@ public class Falling : MonoBehaviour
         _notColliding = true;
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            Camera.main.transform.position = _mainCam.transform.position;
-            Camera.main.transform.rotation = _mainCam.transform.rotation;
-            _cutscene.SetActive(true);
-        }
-    }
+    
 }

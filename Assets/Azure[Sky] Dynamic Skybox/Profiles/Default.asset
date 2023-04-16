@@ -19,7 +19,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.061
+    slider: 0.115
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2
@@ -220,8 +220,8 @@ MonoBehaviour:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 6.4000015
-        value: 0.12734985
+        time: 7.7000046
+        value: 0.11557007
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     timelineBasedGradient:
       serializedVersion: 2
-      key0: {r: 0.16037738, g: 0.129361, b: 0.15281877, a: 1}
+      key0: {r: 0.46226418, g: 0.36850303, b: 0.4388239, a: 1}
       key1: {r: 0.6102941, g: 0.8226167, b: 1, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 1, g: 1, b: 1, a: 0}
@@ -1051,7 +1051,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.5
+    slider: 0.47
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2
@@ -1135,7 +1135,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.35
+    slider: 0
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2
@@ -1471,7 +1471,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.691
+    slider: 0.876
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2
@@ -1924,7 +1924,7 @@ MonoBehaviour:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 5.699997
+        time: 7
         value: 1
         inSlope: 0
         outSlope: 0
@@ -2072,7 +2072,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     timelineBasedGradient:
       serializedVersion: 2
-      key0: {r: 0.5, g: 0.24292454, b: 0.41859278, a: 1}
+      key0: {r: 0.5849056, g: 0.3448736, b: 0.50853175, a: 1}
       key1: {r: 1, g: 0.6479197, b: 0.4198113, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 1, g: 0.72003967, b: 0.5424528, a: 0}
@@ -2080,7 +2080,7 @@ MonoBehaviour:
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 15613
+      ctime0: 18697
       ctime1: 24672
       ctime2: 32768
       ctime3: 45875
@@ -2440,7 +2440,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0
+    slider: 1
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2
@@ -2860,7 +2860,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0
+    slider: 0.314
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2
@@ -3028,7 +3028,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0
+    slider: 0.555
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2
@@ -3280,7 +3280,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.5
+    slider: 0.041
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2

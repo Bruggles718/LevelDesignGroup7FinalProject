@@ -50,7 +50,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f1b85dd5ba1d53b468130413f4b6852f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 90352569d526f3d4ba33800b6dbfc639, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -74,7 +74,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TopMainTex:
-        m_Texture: {fileID: 2800000, guid: 07d0c5e79a10e5a49b392a2e1012a7e2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8083b0e0f1e3baa41aba0e8ebf802efb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TopNormalMap:
@@ -83,10 +83,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BlendExponent: 8
+    - _BlendExponent: 5.65
     - _BlendHeightFactor: 0.5
-    - _BlendHeightStrength: 0.5
-    - _BlendOffset: 0.25
+    - _BlendHeightStrength: 0.282
+    - _BlendOffset: 0.353
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -94,7 +94,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MapScale: 1
+    - _MapScale: 0.0625
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Time Cycle
   - Bear
+  - Projectile
   layers:
   - Default
   - TransparentFX

@@ -19,7 +19,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.5
+    slider: 0.061
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2
@@ -220,8 +220,8 @@ MonoBehaviour:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 6
-        value: 0.125
+        time: 6.4000015
+        value: 0.12734985
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     timelineBasedGradient:
       serializedVersion: 2
-      key0: {r: 0.25, g: 0.6586208, b: 1, a: 1}
+      key0: {r: 0.16037738, g: 0.129361, b: 0.15281877, a: 1}
       key1: {r: 0.6102941, g: 0.8226167, b: 1, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 1, g: 1, b: 1, a: 0}
@@ -443,7 +443,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     timelineBasedGradient:
       serializedVersion: 2
-      key0: {r: 0.25, g: 0.6586208, b: 1, a: 1}
+      key0: {r: 0.16220185, g: 0.30482593, b: 0.4245283, a: 1}
       key1: {r: 0.9622642, g: 0.71845603, b: 0.32226774, a: 1}
       key2: {r: 0.9622642, g: 0.71845603, b: 0.32226774, a: 0}
       key3: {r: 1, g: 1, b: 1, a: 0}
@@ -715,7 +715,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.5
+    slider: 0.462
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2
@@ -799,7 +799,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.25
+    slider: 0.233
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2
@@ -1387,7 +1387,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.1
+    slider: 0.169
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2
@@ -1471,7 +1471,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.75
+    slider: 0.691
     colorField: {r: 1, g: 1, b: 1, a: 1}
     timelineBasedCurve:
       serializedVersion: 2
@@ -1607,7 +1607,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     timelineBasedGradient:
       serializedVersion: 2
-      key0: {r: 0.21800464, g: 0.4361522, b: 0.6509434, a: 1}
+      key0: {r: 0.35590956, g: 0.47040758, b: 0.5849056, a: 1}
       key1: {r: 0.4217128, g: 0.50172997, b: 0.73529416, a: 1}
       key2: {r: 0.4217128, g: 0.50172997, b: 0.73529416, a: 0}
       key3: {r: 0.21800464, g: 0.4361522, b: 0.6509434, a: 0}
@@ -1730,76 +1730,31 @@ MonoBehaviour:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.35
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
+        value: 0.85849
+        inSlope: 0.014381363
+        outSlope: 0.014381363
+        tangentMode: 34
         weightedMode: 0
-        inWeight: 0.33333334
+        inWeight: 0
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 5.5
-        value: 0.35
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 6
-        value: 0.1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 6.5
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 17.5
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 18
-        value: 0.1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 18.5
-        value: 0.35
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
+        time: 8.199997
+        value: 0.9764171
+        inSlope: 0.007936975
+        outSlope: 0.007936975
+        tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 24
-        value: 0.35
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 1
+        value: 1
+        inSlope: 0.0014925868
+        outSlope: 0.0014925868
+        tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1913,7 +1868,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     timelineBasedGradient:
       serializedVersion: 2
-      key0: {r: 0.52205884, g: 0.68357, b: 1, a: 1}
+      key0: {r: 0.28264597, g: 0.23776254, b: 0.3679245, a: 1}
       key1: {r: 1, g: 0.51724136, b: 0, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 1, g: 1, b: 1, a: 0}
@@ -1921,7 +1876,7 @@ MonoBehaviour:
       key5: {r: 0.52205884, g: 0.68357, b: 1, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 14745
+      ctime0: 8481
       ctime1: 17694
       ctime2: 21299
       ctime3: 44236
@@ -1952,7 +1907,7 @@ MonoBehaviour:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.25
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1960,8 +1915,8 @@ MonoBehaviour:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 5
-        value: 0.25
+        time: 2.100006
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1969,7 +1924,7 @@ MonoBehaviour:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 6
+        time: 5.699997
         value: 1
         inSlope: 0
         outSlope: 0
@@ -2014,7 +1969,7 @@ MonoBehaviour:
         time: 0
         value: 0
         inSlope: 0
-        outSlope: 1
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -2023,7 +1978,7 @@ MonoBehaviour:
         time: 1
         value: 1
         inSlope: 1
-        outSlope: 0
+        outSlope: 1
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -2117,19 +2072,19 @@ MonoBehaviour:
       m_RotationOrder: 4
     timelineBasedGradient:
       serializedVersion: 2
-      key0: {r: 0.047837317, g: 0.08896489, b: 0.23584908, a: 1}
-      key1: {r: 1, g: 0.72003967, b: 0.5424528, a: 1}
+      key0: {r: 0.5, g: 0.24292454, b: 0.41859278, a: 1}
+      key1: {r: 1, g: 0.6479197, b: 0.4198113, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 1, g: 0.72003967, b: 0.5424528, a: 0}
-      key4: {r: 0.047837317, g: 0.08896489, b: 0.23584908, a: 0}
+      key4: {r: 0.252314, g: 0.25958622, b: 0.2830189, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 15073
-      ctime1: 19661
+      ctime0: 15613
+      ctime1: 24672
       ctime2: 32768
       ctime3: 45875
-      ctime4: 50462
+      ctime4: 52043
       ctime5: 0
       ctime6: 0
       ctime7: 0
@@ -2182,7 +2137,7 @@ MonoBehaviour:
         time: 0
         value: 0
         inSlope: 0
-        outSlope: 1
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -2191,7 +2146,7 @@ MonoBehaviour:
         time: 1
         value: 1
         inSlope: 1
-        outSlope: 0
+        outSlope: 1
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -2201,19 +2156,19 @@ MonoBehaviour:
       m_RotationOrder: 4
     timelineBasedGradient:
       serializedVersion: 2
-      key0: {r: 0.047837317, g: 0.08896489, b: 0.23584908, a: 1}
-      key1: {r: 1, g: 0.72003967, b: 0.5424528, a: 1}
+      key0: {r: 0.15076537, g: 0.17438738, b: 0.26415092, a: 1}
+      key1: {r: 0.6792453, g: 0.4517622, b: 0.30437878, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 1, g: 0.72003967, b: 0.5424528, a: 0}
-      key4: {r: 0.047837317, g: 0.08896489, b: 0.23584908, a: 0}
+      key4: {r: 0.18992524, g: 0.2415265, b: 0.41509432, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 15073
+      ctime0: 14649
       ctime1: 19661
       ctime2: 32768
       ctime3: 45875
-      ctime4: 50462
+      ctime4: 51850
       ctime5: 0
       ctime6: 0
       ctime7: 0
@@ -2263,10 +2218,10 @@ MonoBehaviour:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
+        time: 0.05833435
         value: 0
         inSlope: 0
-        outSlope: 1
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -2275,7 +2230,7 @@ MonoBehaviour:
         time: 1
         value: 1
         inSlope: 1
-        outSlope: 0
+        outSlope: 1
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -2285,11 +2240,11 @@ MonoBehaviour:
       m_RotationOrder: 4
     timelineBasedGradient:
       serializedVersion: 2
-      key0: {r: 0.047837317, g: 0.08896489, b: 0.23584908, a: 1}
+      key0: {r: 0.18102525, g: 0.21878654, b: 0.33962262, a: 1}
       key1: {r: 1, g: 0.72003967, b: 0.5424528, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 1, g: 0.72003967, b: 0.5424528, a: 0}
-      key4: {r: 0.047837317, g: 0.08896489, b: 0.23584908, a: 0}
+      key4: {r: 0.09229262, g: 0.14464854, b: 0.3207547, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
@@ -3889,7 +3844,7 @@ MonoBehaviour:
         time: 0
         value: 0
         inSlope: 0
-        outSlope: 1
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -3898,7 +3853,7 @@ MonoBehaviour:
         time: 1
         value: 1
         inSlope: 1
-        outSlope: 0
+        outSlope: 1
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -3908,7 +3863,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     timelineBasedGradient:
       serializedVersion: 2
-      key0: {r: 0.32407007, g: 0.4158245, b: 0.5955882, a: 1}
+      key0: {r: 0.22614808, g: 0.28284088, b: 0.3962264, a: 1}
       key1: {r: 1, g: 0.51724136, b: 0, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 1, g: 1, b: 1, a: 0}

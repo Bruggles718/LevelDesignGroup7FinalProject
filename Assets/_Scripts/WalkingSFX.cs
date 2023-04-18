@@ -17,7 +17,7 @@ public class WalkingSFX : MonoBehaviour {
 
     private void Update() {
         _elapsedTime += Time.deltaTime;
-        if (!PlayerController.isMoving) audioSource.Stop();
+        if (!PlayerController.isMoving || !PlayerController.isGrounded) audioSource.Stop();
         if (_elapsedTime >= sfXs[_sfXIdx].length && PlayerController.isMoving) {
             _elapsedTime = 0f;
             int randomIdx = Random.Range(0, sfXs.Length);

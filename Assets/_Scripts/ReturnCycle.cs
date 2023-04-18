@@ -7,15 +7,13 @@ using UnityEngine.AzureSky;
 public class ReturnCycle : MonoBehaviour
 {
     public float duration = 20f;
-    public float endValue = 2.03f;
+    public float endValue;
     public AzureTimeController atc;
     private float _startValue = 0;
-    private float _cycles = 0f;
     private bool _firstEnter = true;
     private bool _secondEnter = false;
     private bool _start = false;
     private float _elapsedTime = 0.0f;
-    private float _tVal = 0f;
     private float _timeValue;
 
     private void Start() {
@@ -49,9 +47,5 @@ public class ReturnCycle : MonoBehaviour
             _secondEnter = false;
             _start = true;
         }
-    }
-
-    private void OnDrawGizmos() {
-        
     }
 }

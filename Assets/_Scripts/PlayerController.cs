@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight = 10f;
     public float gravity = 9.81f;
     public float airControl = 10f;
+    public static bool isMoving;
+    public static bool isGrounded;
     private Vector3 input;
     private float distanceToGround;
     //private Animator anim;
@@ -28,7 +30,6 @@ public class PlayerController : MonoBehaviour
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-
         input = Vector3.ClampMagnitude((transform.right * moveHorizontal+ transform.forward * moveVertical), Mathf.Max(Mathf.Abs(moveHorizontal), Mathf.Abs(moveVertical)));
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -73,11 +74,18 @@ public class PlayerController : MonoBehaviour
         }
 
         moveDirection.y -= gravity * Time.deltaTime;
+        if (moveDirection.x != 0f || moveDirection.z != 0) {
+            isMoving = true;
+        }
+        else {
+            isMoving = false;
+        }
         controller.Move(moveDirection * Time.deltaTime);
     }
 
     private bool IsGrounded()
     {
+        isGrounded = Physics.Raycast(this.transform.position, -Vector3.up, this.distanceToGround + 0.2f);
         return Physics.Raycast(this.transform.position, -Vector3.up, this.distanceToGround + 0.2f);
     }
 }

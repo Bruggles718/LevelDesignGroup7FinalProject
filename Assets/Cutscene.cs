@@ -59,7 +59,7 @@ public class Cutscene : MonoBehaviour
         {
             GetComponent<PlayerController>().enabled = false;
             StartRotating();
-            Invoke("StartMoving", 4.6f);
+            Invoke("StartMoving", 4.3f);
             this.enabled = false;
         }
     }

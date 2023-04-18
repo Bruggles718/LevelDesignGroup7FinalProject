@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class Falling : MonoBehaviour
 {
+    public AudioClip clip;
     public Transform _mainCam;
-    public Transform target;
     public float gravity = 9.81f;
     public float speed = 2f;
     private bool _notColliding = true;
     private Rigidbody _myRb;
+    bool _firstEnter = true;
+    
+
     [SerializeField]
-    private GameObject _cutscene;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,11 @@ public class Falling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (this.transform.position.y <= 75f && _firstEnter)
+        {
+            AudioSource.PlayClipAtPoint(clip, this.transform.position);
+            _firstEnter = false;
+        }
     }
 
     private void FixedUpdate()
@@ -35,9 +41,12 @@ public class Falling : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+
+        private void OnCollisionEnter(Collision collision)
     {
         _notColliding = false;
+        
+
     }
 
     private void OnCollisionExit(Collision other)

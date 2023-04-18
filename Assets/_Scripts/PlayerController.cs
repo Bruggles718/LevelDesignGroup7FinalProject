@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float gravity = 9.81f;
     public float airControl = 10f;
     public static bool isMoving;
+    public static bool isGrounded;
     private Vector3 input;
     private float distanceToGround;
     //private Animator anim;
@@ -76,6 +77,7 @@ public class PlayerController : MonoBehaviour
 
     private bool IsGrounded()
     {
+        isGrounded = Physics.Raycast(this.transform.position, -Vector3.up, this.distanceToGround + 0.2f);
         return Physics.Raycast(this.transform.position, -Vector3.up, this.distanceToGround + 0.2f);
     }
 }

@@ -1,11 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.AzureSky;
 
-public class DayNight : MonoBehaviour
+public class ReturnCycle : MonoBehaviour
 {
     public float duration = 20f;
     public float endValue = 2.03f;
@@ -13,13 +12,13 @@ public class DayNight : MonoBehaviour
     private float _startValue = 0;
     private float _cycles = 0f;
     private bool _firstEnter = true;
+    private bool _secondEnter = false;
     private bool _start = false;
     private float _elapsedTime = 0.0f;
     private float _tVal = 0f;
     private float _timeValue;
-    
-    private void Start()
-    {
+
+    private void Start() {
         if (atc != null) _startValue = atc.GetTimeline();
     }
 
@@ -40,8 +39,19 @@ public class DayNight : MonoBehaviour
     {
         if (_firstEnter && other.CompareTag("Player"))
         {
-            _start = true;
+            Debug.Log("First enter");
             _firstEnter = false;
+            _secondEnter = true;
         }
+        else if (_secondEnter && other.CompareTag("Player"))
+        {
+            Debug.Log("Second enter");
+            _secondEnter = false;
+            _start = true;
+        }
+    }
+
+    private void OnDrawGizmos() {
+        
     }
 }

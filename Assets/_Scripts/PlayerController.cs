@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight = 10f;
     public float gravity = 9.81f;
     public float airControl = 10f;
+    public static bool isMoving;
     private Vector3 input;
     private float distanceToGround;
     //private Animator anim;
@@ -27,7 +28,6 @@ public class PlayerController : MonoBehaviour
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-
         input = Vector3.ClampMagnitude((transform.right * moveHorizontal+ transform.forward * moveVertical), Mathf.Max(Mathf.Abs(moveHorizontal), Mathf.Abs(moveVertical)));
         input *= speed;
 
@@ -65,6 +65,12 @@ public class PlayerController : MonoBehaviour
         }
 
         moveDirection.y -= gravity * Time.deltaTime;
+        if (moveDirection.x != 0f || moveDirection.z != 0) {
+            isMoving = true;
+        }
+        else {
+            isMoving = false;
+        }
         controller.Move(moveDirection * Time.deltaTime);
     }
 

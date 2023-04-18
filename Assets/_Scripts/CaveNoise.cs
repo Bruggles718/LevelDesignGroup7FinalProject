@@ -7,6 +7,7 @@ public class CaveNoise : MonoBehaviour {
     public AudioClip caveNoise;
     public AudioSource audioSource;
     public float duration = 10f;
+    public static bool playingCave = false;
     private bool _firstEnter = true;
     private bool _startExit = false;
     private float _elapsedTime;
@@ -21,6 +22,7 @@ public class CaveNoise : MonoBehaviour {
             }
             else {
                 audioSource.Stop();
+                playingCave = false;
                 audioSource.clip = null;
                 _startExit = false;
             }
@@ -29,6 +31,7 @@ public class CaveNoise : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (_firstEnter) {
+            playingCave = true;
             audioSource.clip = caveNoise;
             audioSource.Play();
         }

@@ -10,16 +10,12 @@ public class DayNight : MonoBehaviour
     public float duration = 20f;
     public float endValue;
     public AzureTimeController atc;
+    public bool activated = false;
     private float _startValue = 0;
     private bool _firstEnter = true;
     private bool _start = false;
     private float _elapsedTime = 0.0f;
     private float _timeValue;
-    
-    private void Start()
-    {
-        if (atc != null) _startValue = atc.GetTimeline();
-    }
 
     void Update()
     {
@@ -36,8 +32,10 @@ public class DayNight : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (_firstEnter && other.CompareTag("Player"))
-        {
+        if (_firstEnter && other.CompareTag("Player")) {
+            if (atc != null) _startValue = atc.GetTimeline();
+            activated = true;
+            Debug.Log(activated);
             _start = true;
             _firstEnter = false;
         }

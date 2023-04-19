@@ -6,7 +6,6 @@ using UnityEngine;
 public class Falling : MonoBehaviour
 {
     public AudioClip clip;
-    public Transform _mainCam;
     public float gravity = 9.81f;
     public float speed = 2f;
     private bool _notColliding = true;

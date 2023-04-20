@@ -14,14 +14,15 @@ public class NoisePlayer : MonoBehaviour
     private void Update() {
         
         if (_startExit) {
-            
+
             if (_elapsedTime <= duration) {
                 _elapsedTime += Time.deltaTime;
                 audioSource.volume = Mathf.Lerp(1.0f, 0f, _elapsedTime / duration);
-                Debug.Log(audioSource.volume);
             }
             else {
+                _elapsedTime = 0.0f;
                 audioSource.Stop();
+                audioSource.volume = 1.0f;
                 audioSource.clip = null;
                 _startExit = false;
             }
@@ -29,7 +30,8 @@ public class NoisePlayer : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (_firstEnter) {
+        if (other.CompareTag("Player")) {
+            Debug.Log(gameObject.name);
             audioSource.clip = noiseSFX;
             audioSource.loop = true;
             audioSource.Play();
@@ -38,10 +40,6 @@ public class NoisePlayer : MonoBehaviour
     }
 
     private void OnTriggerExit(Collider other) {
-        if (_firstEnter) {
-            _startExit = true;
-            _firstEnter = false;
-        }
-        
+        if (other.CompareTag("Player")) _startExit = true;
     }
 }

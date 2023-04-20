@@ -23,7 +23,7 @@ public class WalkingSFX : MonoBehaviour {
             _elapsedTime = 0f;
             int randomIdx = Random.Range(0, sfXs.Length);
             audioSource.clip = sfXs[randomIdx];
-            audioSource.volume = 0.5f;
+            audioSource.volume = 0.2f;
            
             audioSource.Play();
         }

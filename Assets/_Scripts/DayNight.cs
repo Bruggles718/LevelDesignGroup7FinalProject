@@ -17,8 +17,8 @@ public class DayNight : MonoBehaviour
     private float _elapsedTime = 0.0f;
     private float _timeValue;
 
-    void Update()
-    {
+    void Update() {
+
         if (_start)
         {
             if (_elapsedTime <= duration)
@@ -35,9 +35,12 @@ public class DayNight : MonoBehaviour
         if (_firstEnter && other.CompareTag("Player")) {
             if (atc != null) _startValue = atc.GetTimeline();
             activated = true;
-            Debug.Log(activated);
             _start = true;
             _firstEnter = false;
         }
     }
+
+    
+    
+    
 }

@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 input;
     private float distanceToGround;
     //private Animator anim;
+    public Transform respawnPoint;
 
     private Vector3 moveDirection;
     // Start is called before the first frame update
@@ -87,5 +88,20 @@ public class PlayerController : MonoBehaviour
     {
         isGrounded = Physics.Raycast(this.transform.position, -Vector3.up, this.distanceToGround + 0.2f);
         return Physics.Raycast(this.transform.position, -Vector3.up, this.distanceToGround + 0.2f);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Projectile"))
+        {
+            this.controller.enabled = false;
+            this.transform.position = this.respawnPoint.position;
+            this.controller.enabled = true;
+        }
+    }
+
+    private void OnDisable()
+    {
+        isMoving = false;
     }
 }

@@ -8,7 +8,13 @@ public class BearTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            GameObject.FindWithTag("Bear").GetComponent<Rigidbody>().isKinematic = false;
+            var bear = GameObject.FindWithTag("Bear");
+            Rigidbody[] rbs = bear.GetComponentsInChildren<Rigidbody>();
+
+            foreach (var rb in rbs)
+            {
+                rb.isKinematic = false;
+            }
         }
 
     }

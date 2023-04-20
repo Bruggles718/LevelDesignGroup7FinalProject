@@ -5,13 +5,18 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public float mouseSensitivity = 100f;
-    float pitch = 0f;
+    public float pitch = 0f;
     // public GameObject flashlight;
     Transform playerBody;
+
+    public float moveX = 0;
+    public float moveY = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (playerBody != null) this.transform.forward = playerBody.transform.forward;
+        if (Cutscene.cutscenePlaying) return;
         playerBody = transform.parent.transform;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -20,8 +25,9 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float moveY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        
+        moveX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        moveY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         //yaw
         playerBody.Rotate(Vector3.up * moveX);

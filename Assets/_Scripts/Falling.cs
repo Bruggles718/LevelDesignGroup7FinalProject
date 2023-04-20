@@ -11,19 +11,22 @@ public class Falling : MonoBehaviour
     private bool _notColliding = true;
     private Rigidbody _myRb;
     bool _firstEnter = true;
+
+    private Rigidbody[] rbs;
     
 
     [SerializeField]
     // Start is called before the first frame update
     void Start()
     {
-        _myRb = GetComponent<Rigidbody>();
+        //_myRb = GetComponent<Rigidbody>();
+        rbs = GetComponentsInChildren<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (this.transform.position.y <= 75f && _firstEnter)
+        if (rbs[0].position.y <= 75f && _firstEnter)
         {
             AudioSource.PlayClipAtPoint(clip, this.transform.position);
             _firstEnter = false;
@@ -34,8 +37,12 @@ public class Falling : MonoBehaviour
     {
         if (_notColliding)
         {
-            float downwardForce = gravity * _myRb.mass * speed;
-            _myRb.AddForce(new Vector3(0,-1,0) * downwardForce);
+            float downwardForce = gravity * 70 * speed;
+            //_myRb.AddForce(new Vector3(0,-1,0) * downwardForce);
+            foreach (var rb in rbs)
+            {
+                //rb.AddForce(new Vector3(0, -1, 0) * downwardForce);
+            }
         }
         
     }

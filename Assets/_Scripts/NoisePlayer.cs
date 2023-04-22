@@ -11,18 +11,19 @@ public class NoisePlayer : MonoBehaviour
     private bool _firstEnter = true;
     private bool _startExit = false;
     private float _elapsedTime;
+
     private void Update() {
         
         if (_startExit) {
 
             if (_elapsedTime <= duration) {
                 _elapsedTime += Time.deltaTime;
-                audioSource.volume = Mathf.Lerp(1.0f, 0f, _elapsedTime / duration);
+                audioSource.volume = Mathf.Lerp(0.2f, 0f, _elapsedTime / duration);
             }
             else {
                 _elapsedTime = 0.0f;
                 audioSource.Stop();
-                audioSource.volume = 1.0f;
+                audioSource.volume = 0.2f;
                 audioSource.clip = null;
                 _startExit = false;
             }
@@ -41,5 +42,6 @@ public class NoisePlayer : MonoBehaviour
 
     private void OnTriggerExit(Collider other) {
         if (other.CompareTag("Player")) _startExit = true;
+
     }
 }

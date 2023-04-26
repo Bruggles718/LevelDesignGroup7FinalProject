@@ -18,7 +18,6 @@ public class CaveNoise : MonoBehaviour {
             if (_elapsedTime <= duration) {
                 _elapsedTime += Time.deltaTime;
                 audioSource.volume = Mathf.Lerp(1.0f, 0f, _elapsedTime / duration);
-                Debug.Log(audioSource.volume);
             }
             else {
                 audioSource.Stop();

@@ -9,7 +9,6 @@ public class ReturnCycle : MonoBehaviour
     public float duration = 20f;
     public float endValue;
     public AzureTimeController atc;
-    public DayNight dn;
     private float _startValue = 0;
     private bool _firstEnter = true;
     private bool _start = false;
@@ -31,11 +30,9 @@ public class ReturnCycle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Returning: " + dn.activated);
-        if (_firstEnter && other.CompareTag("Player") && dn.activated)
+        if (_firstEnter && other.CompareTag("Player"))
         {
             if (atc != null) _startValue = atc.GetTimeline();
-            Debug.Log("Returning");
             _firstEnter = false;
             _start = true;
         }

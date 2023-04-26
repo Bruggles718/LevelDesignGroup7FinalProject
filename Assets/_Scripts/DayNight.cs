@@ -10,7 +10,6 @@ public class DayNight : MonoBehaviour
     public float duration = 20f;
     public float endValue;
     public AzureTimeController atc;
-    public bool activated = false;
     private float _startValue = 0;
     private bool _firstEnter = true;
     private bool _start = false;
@@ -34,7 +33,6 @@ public class DayNight : MonoBehaviour
     {
         if (_firstEnter && other.CompareTag("Player")) {
             if (atc != null) _startValue = atc.GetTimeline();
-            activated = true;
             _start = true;
             _firstEnter = false;
         }

@@ -28,7 +28,6 @@ public class Falling : MonoBehaviour
     {
         if (rbs[0].position.y <= 75f && _firstEnter)
         {
-            AudioSource.PlayClipAtPoint(clip, this.transform.position);
             _firstEnter = false;
         }
     }
@@ -60,5 +59,8 @@ public class Falling : MonoBehaviour
         _notColliding = true;
     }
 
-    
+    public void PlaySound()
+    {
+        AudioSource.PlayClipAtPoint(clip, this.transform.position);
+    }
 }
